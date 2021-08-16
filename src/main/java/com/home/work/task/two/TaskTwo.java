@@ -13,7 +13,7 @@ public class TaskTwo {
     }
 
     public static void main(String[] args) {
-    List<String> list = new ArrayList();
+        List<String> list = new ArrayList();
 
         list.add("Maks");
         list.add("Nik");

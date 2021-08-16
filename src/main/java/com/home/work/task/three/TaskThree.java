@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TaskThree {
-    public static String sortArray(String[] arr){
-        List<String> list =  Arrays.asList(arr);
+    public static String sortArray(String[] arr) {
+        List<String> list = Arrays.asList(arr);
 
-        String tmp =  list.stream()
-                .map(n->n.replace(",,", ","))
+        String tmp = list.stream()
+                .map(n -> n.replace(",,", ","))
                 .collect(Collectors.toSet())
                 .stream()
                 .sorted()
@@ -21,7 +21,7 @@ public class TaskThree {
         return Arrays.stream(tmpArr)
                 .map(Integer::valueOf)
                 .collect(Collectors
-                .toList())
+                        .toList())
                 .stream()
                 .sorted()
                 .collect(Collectors.toList())

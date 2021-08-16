@@ -9,9 +9,9 @@ public class TaskOne {
     public static String convertToString(List<String> names) {
         return IntStream
                 .range(0, names.size())
-                .filter(index -> index%2 != 0)
-                .mapToObj(index-> index + ". " + names.get(index))
-                .collect(Collectors.joining( ", "));
+                .filter(index -> index % 2 != 0)
+                .mapToObj(index -> index + ". " + names.get(index))
+                .collect(Collectors.joining(", "));
     }
 
     public static void main(String[] args) {

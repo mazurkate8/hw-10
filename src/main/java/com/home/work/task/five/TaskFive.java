@@ -18,9 +18,9 @@ public class TaskFive {
         int min = Math.min(firstStream.size(), secondStream.size());
         int loopStream = firstStream.size() == min ? firstStream.size() : secondStream.size();
 
-            for (int i = 0; i < loopStream; i++) {
-                lst.add(firstStream.get(i));
-                lst.add(secondStream.get(i));
+        for (int i = 0; i < loopStream; i++) {
+            lst.add(firstStream.get(i));
+            lst.add(secondStream.get(i));
         }
         return lst.stream();
     }
